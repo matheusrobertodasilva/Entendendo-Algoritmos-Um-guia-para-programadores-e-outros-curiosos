@@ -19,7 +19,7 @@ function quickSort(array){
         return array
     }
 
-    let pivo = array[0];
+    let pivo = array[Math.floor(array.length / 2)];
     let menores = []
     let maiores = []
     for(let i = 1; i < array.length; i++){
@@ -57,3 +57,7 @@ function quickSort(array){
   
 
 console.log(quickSort([10,5,2,3,12,50,90,25,70]))
+
+// let total = [1,2,3,4,5,6,7,8,9]
+// let metade = Math.floor(total.length/2) 
+// console.log(metade)
